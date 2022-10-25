@@ -24,7 +24,7 @@ def calculator(func, number):
     elif func == "hexadecimal":
         return hex(number)
     elif func == "div_2":
-        if number % 2 == 0:
+        if number % 2 == 0:     #ten if else i nastepy mozna krocej: return number %2 == 0
             return True
         else:
             return False
