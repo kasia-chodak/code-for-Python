@@ -93,6 +93,7 @@ def is_palindrome(string):
 
 
 # 10 multiplying matrices, kill me
+#                           No
 def multiplying_matrices(matrix_a, matrix_b):
     dim_rows = len(matrix_a)
     dim_cols = len(matrix_b[0])
