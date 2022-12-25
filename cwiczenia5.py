@@ -144,7 +144,7 @@ def del_lower(string):
     for elem in to_del:
         string = string.replace(elem, '')
     return string
-
+#wydaje mi się, że szybciej byłoby zrobić find dużych i join, ale tak też jest ok
 
 example = "ATTTGgccTaC"
 # print(del_lower(example))
