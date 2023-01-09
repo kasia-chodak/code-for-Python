@@ -1,6 +1,14 @@
 # https://github.com/krzysztofmakuch/pythonProgramming/projects/7
-
+import sys
 import math
+
+command_len = len(sys.argv)
+
+command = ''
+for i in range(1, command_len):
+    command += sys.argv[i]
+
+print(eval(command))
 
 
 class Worker:
