@@ -2,6 +2,7 @@
 import os
 import re
 import datetime
+from dateutil import relativedelta
 
 # pani Maria
 os.chdir(r"C:\Users\Kasia\PycharmProjects\pythonProject\praca_z_plikami")
@@ -50,7 +51,7 @@ def your_age():
     try:
         dob = datetime.datetime.strptime(age, '%d/%m/%Y')
         now = datetime.datetime.now()
-        time_from_dob = now - dob
-        print(time_from_dob)
+        delta = relativedelta.relativedelta(now, dob)
+        print(delta.years, delta.months, delta.days)
     except ValueError:
         print('Make sure to use proper formatting!')
