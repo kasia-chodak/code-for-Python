@@ -52,6 +52,6 @@ def your_age():
         dob = datetime.datetime.strptime(age, '%d/%m/%Y')
         now = datetime.datetime.now()
         delta = relativedelta.relativedelta(now, dob)
-        print(delta.years, delta.months, delta.days)
+        print('Years:', delta.years, '\nMonths:', delta.months, '\nDays:', delta.days)
     except ValueError:
         print('Make sure to use proper formatting!')
